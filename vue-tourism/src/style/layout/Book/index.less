@@ -1,0 +1,80 @@
+.main {
+    display: flex;
+    top: 0;
+    bottom: 0;
+    // background-color: #3333;
+    width: 80%;
+    margin:0 auto;
+    min-height: 600px;
+    flex-direction: column;
+}
+.title {
+    height: 100px;
+    width: 100%;
+    // background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px dotted #3333;
+}
+
+.container {
+    flex:1;
+    display: flex;
+    flex-wrap: wrap;
+    .wrap {
+        height: 282px;
+        width: 210px;
+        background-color: #fff;
+        margin: 40px 40px 0 40px;
+        border-radius: 10px 10px 0 0;
+        display: flex;
+        flex-direction: column;
+        border: 1px dotted #3333;
+        .pic{
+            height: 160px;
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+            transition: transform .3s ease-in-out;
+ 
+        }
+        .context {
+            flex:1;
+            // background-color: yellow;
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            
+        }
+    }
+}
+.pic:hover{
+    transform: scale(1.1); /* 放大10% */
+}
+
+.context_name {
+    font-size: 20px;
+   
+}
+.context_bottom {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+.context_price {
+    color: #0086f6;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+}
+.context_num {
+    color: #666666;
+    font-size: 14px;
+}
+.time {
+    color: #666666;
+    font-size: 12px;
+}
